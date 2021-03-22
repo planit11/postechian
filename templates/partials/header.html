@@ -1,0 +1,73 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <div class="container">
+      <a href="{% url "core:home" %}" class="mr-2"><img class="w-24" src="{% static 'img/logo.png' %}" /></a>
+      <a class="navbar-brand" href="{% url "core:home" %}" >포스텍동문재단</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-1 mb-lg-0">
+          <li class="nav-item dropdown ml-2">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              동문재단 소개
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="http://127.0.0.1:8000/purpose">설립취지</a></li>
+              <li><a class="dropdown-item" href="http://127.0.0.1:8000/policy">정관</a></li>
+              <li><a class="dropdown-item" href="#">오시는 길</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ml-2">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              사업안내
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">장학사업</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ml-2">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              기부하신 분들
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="http://127.0.0.1:8000/donation_status">기부현황</a></li>
+            </ul>
+          </li>           
+          <li class="nav-item dropdown ml-2">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              장학금 신청
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">신청</a></li>
+            </ul>
+          </li>      
+          <li class="nav-item dropdown ml-2">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              재단소식
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="http://127.0.0.1:8000/articles/announce">공지사항</a></li>
+              <li><a class="dropdown-item" href="http://127.0.0.1:8000/articles/news">동문소식</a></li>              
+            </ul>
+          </li>                              
+        </ul>
+      </div>
+    </div>
+</nav>
+<div class="align-items-center w-auto h-96 mx-4 bg-center" style="background-image:url({% static 'img/main_image.jpg' %})">
+  <div class="my-16 item-center">
+      <div class="h-40 items-center"></div>
+      <div class="container h-40 items-center">
+        <p class="text-5xl text-white text-center">선후배 포스테키안들의 훈훈한 동맹, 포스텍동문재단</p><br>
+        <p class="text-3xl text-gray-400 text-center">포스텍 동문들을 응원합니다</p><br>
+        <!-- 
+        <p class="text-center">
+        <a href="#" class="btn btn-outline-secondary my-2">기부하기</a>
+        <a href="#" class="btn btn-outline-secondary my-2">장학금신청하기</a> 
+        </p> -->
+      </div>
+  </div>
+</div>
+

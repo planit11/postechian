@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block page_name %}
+    공지사항
+{% endblock page_name %}
+
+{% block content %}
+    <br><br>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">날짜</th>
+            <th scope="col">이름</th>
+            <th scope="col">제목</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for article in articles  %}  
+                <tr>
+                  <td><a class="text-muted" style="text-decoration: none;" href="{% url "articles:detail" article.pk %}">{{article.created_on}}</a></td>
+                  <td><a class="text-muted" style="text-decoration: none;" href="{% url "articles:detail" article.pk %}">{{article.title}}</a></td>
+                  <td><a class="text-muted" style="text-decoration: none;" href="{% url "articles:detail" article.pk %}">{{article.author}}</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock content %}
